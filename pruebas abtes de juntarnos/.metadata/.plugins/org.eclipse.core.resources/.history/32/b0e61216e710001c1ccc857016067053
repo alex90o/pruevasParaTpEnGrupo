@@ -40,7 +40,7 @@ public void setDireccion(String direccion) {
 }
 
 
-//contructores // sobre carga de contructores cuando hay mas de uno
+//contructor
 public Persona(int dni, String nombre, String apellido, int edad, String direccion) {
 	this.dni = dni;
 	this.nombre = nombre;
@@ -64,7 +64,6 @@ public String toString() {
 	return "Persona [dni=" + dni + ", nombre=" + nombre + ", edad=" + edad + ", direccion=" + direccion + ", apellido="
 			+ apellido + "]";
 }
-//metodos de la interface
 @Override
 public String informarQueEs() {
 	return SERVIVO;
@@ -76,13 +75,5 @@ public int activarActor() {
 @Override
 public int desactivarActor() {
        return Persona.INACTIVO;
-}
-
-public String salular() {
-	return "Holiiis ! :) ;)";
-}
-public String aprender() {
-	return "Aca Aprendiendo Programación !!!!";
-	
 }
 }

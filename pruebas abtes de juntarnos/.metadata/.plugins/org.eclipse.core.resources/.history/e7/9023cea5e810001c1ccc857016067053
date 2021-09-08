@@ -77,12 +77,4 @@ public int activarActor() {
 public int desactivarActor() {
        return Persona.INACTIVO;
 }
-
-public String salular() {
-	return "Holiiis ! :) ;)";
-}
-public String aprender() {
-	return "Aca Aprendiendo Programación !!!!";
-	
-}
 }

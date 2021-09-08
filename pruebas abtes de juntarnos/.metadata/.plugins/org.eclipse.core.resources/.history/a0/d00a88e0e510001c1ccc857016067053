@@ -7,5 +7,4 @@ int ACTIVO= 1;
 int INACTIVO= 0;
 String informarQueEs();
 int activarActor();
-int desactivarActor();
 }

@@ -21,5 +21,4 @@ public String enseniar() {
 	return "Dando clases";
 }
 
-
 }

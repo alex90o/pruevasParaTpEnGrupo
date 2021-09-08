@@ -2,18 +2,10 @@ package practica;
 
 public class Persona implements Actor{
 
-protected int dni;
-protected String nombre;
-protected int edad;
-protected String direccion;
-protected String apellido;
-
-public String getApellido() {
-	return apellido;
-}
-public void setApellido(String apellido) {
-	this.apellido = apellido;
-}
+private int dni;
+private String nombre;
+private int edad;
+private String direccion;
 public int getDni() {
 	return dni;
 }
@@ -40,31 +32,25 @@ public void setDireccion(String direccion) {
 }
 
 
-//contructores // sobre carga de contructores cuando hay mas de uno
-public Persona(int dni, String nombre, String apellido, int edad, String direccion) {
+//contructor
+public Persona(int dni, String nombre, int edad, String direccion) {
 	this.dni = dni;
 	this.nombre = nombre;
-	this.apellido = apellido;
 	this.edad = edad;
 	this.direccion = direccion;
-	
 }
 public Persona () {
 	
 }
-public Persona(int dni, String nombre,String apellido, int edad) {
+public Persona(int dni, String nombre, int edad) {
 	this.dni = dni;
 	this.nombre = nombre;
 	this.edad = edad;
-	this.apellido = apellido;
 }
-
 @Override
 public String toString() {
-	return "Persona [dni=" + dni + ", nombre=" + nombre + ", edad=" + edad + ", direccion=" + direccion + ", apellido="
-			+ apellido + "]";
+	return "Persona [dni=" + dni + ", nombre=" + nombre + ", edad=" + edad + ", direccion=" + direccion + "]";
 }
-//metodos de la interface
 @Override
 public String informarQueEs() {
 	return SERVIVO;
@@ -76,13 +62,5 @@ public int activarActor() {
 @Override
 public int desactivarActor() {
        return Persona.INACTIVO;
-}
-
-public String salular() {
-	return "Holiiis ! :) ;)";
-}
-public String aprender() {
-	return "Aca Aprendiendo Programación !!!!";
-	
 }
 }
