@@ -4,4 +4,6 @@
     <fullyQualifiedTypeName name="practica.Persona"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="practica.Profesor"/>
+    <fullyQualifiedTypeName name="practica.Estudiantes"/>
 </qualifiedTypeNameHistroy>
