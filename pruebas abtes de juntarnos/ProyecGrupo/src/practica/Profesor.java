@@ -3,7 +3,7 @@ package practica;
 import java.util.ArrayList;
 
 public class Profesor extends Persona {
-private double sueldo;
+private double sueldo= 0;
 private double sueldoBasico;
 private int antiguadad;
 private String titulo;
@@ -11,10 +11,10 @@ private ArrayList<String>listaDeMaterias;
 
 //constructores
 
-public Profesor(int dni, String nombre, String apellido, int edad, String direccion, double sueldo, double sueldoBasico,
+public Profesor(int dni, String nombre, String apellido, int edad, String direccion, double sueldoBasico,
 		int antiguadad, String titulo, ArrayList<String> listaDeMaterias) {
 	super(dni, nombre, apellido, edad, direccion);
-	this.sueldo = sueldo;
+	
 	this.sueldoBasico = sueldoBasico;
 	this.antiguadad = antiguadad;
 	this.titulo = titulo;
@@ -25,14 +25,14 @@ public Profesor() {
 	
 }
 //Set Y Get
-public double getSueldo() {
+/**public double getSueldo() {
 	return sueldo;
 }
 
 public void setSueldo(double sueldo) {
 	this.sueldo = sueldo;
 }
-
+**/
 public double getSueldoBasico() {
 	return sueldoBasico;
 }
@@ -81,13 +81,20 @@ public double calcularSueldo()
 			 this.sueldo = (this.sueldoBasico*1.25);	 	 	 		
 	
 		default:
-			this.sueldo = 0.0;
+			if(this.antiguadad>5)
+			this.sueldo = (this.sueldoBasico*1.35);
 			break;
 	}
 	return sueldo; //creo que ya esta
 };
 public int informarCantMaterias() {
-	return this.listaDeMaterias.size();
+	if(this.listaDeMaterias.isEmpty()) {
+	return 0;
+	}
+	else {
+		return this.listaDeMaterias.size();	
+	}
+	
 }
 public void agregarMateria(String materia) {
 	this.listaDeMaterias.add(materia);
@@ -99,8 +106,9 @@ public String enseniar() {
 
 @Override
 public String toString() {
+	
 	return "Profesor [sueldo=" + sueldo + ", sueldoBasico=" + sueldoBasico + ", antiguadad=" + antiguadad + ", titulo="
-			+ titulo + "]";
+			+ titulo+" " + super.toString() +"]";
 }
 
 

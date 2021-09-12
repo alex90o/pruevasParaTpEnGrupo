@@ -1,6 +1,6 @@
 package practica;
 
-public class Persona implements Actor{
+public abstract class Persona implements Actor{
 
 protected int dni;
 protected String nombre;
@@ -8,6 +8,7 @@ protected int edad;
 protected String direccion;
 protected String apellido;
 
+//Set y Get
 public String getApellido() {
 	return apellido;
 }
@@ -70,14 +71,14 @@ public String informarQueEs() {
 	return SERVIVO;
 }
 @Override
-public int activarActor() {
+public boolean activarActor() {
 	return Persona.ACTIVO;
 	}
 @Override
-public int desactivarActor() {
+public boolean desactivarActor() {
        return Persona.INACTIVO;
 }
-
+//otreso metodos de persona
 public String salular() {
 	return "Holiiis ! :) ;)";
 }

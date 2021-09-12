@@ -2,8 +2,8 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="practica.Actor"/>
     <fullyQualifiedTypeName name="practica.Persona"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="practica.Profesor"/>
     <fullyQualifiedTypeName name="practica.Estudiantes"/>
+    <fullyQualifiedTypeName name="practica.Profesor"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

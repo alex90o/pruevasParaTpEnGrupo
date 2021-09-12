@@ -3,9 +3,9 @@ package practica;
 public interface Actor {
 String SERVIVO= "Es un Ser Vivo";
 String MAQUINA= "Es una Maquina";
-int ACTIVO= 1;
-int INACTIVO= 0;
+boolean ACTIVO= true;
+boolean INACTIVO= false;
 String informarQueEs();
-int activarActor();
-int desactivarActor();
+boolean activarActor();
+boolean desactivarActor();
 }
