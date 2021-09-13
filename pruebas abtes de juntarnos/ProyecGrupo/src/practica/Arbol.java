@@ -40,6 +40,11 @@ public boolean desactivarActor() {
     return Arbol.INACTIVO;
 }
 
+@Override
+public String toString() {
+	return "Arbol [corona=" + corona + " " + super.toString() +"]";
+}
+
 //metodo de arbol
 public String saludosDeArbol(){
 	return "Hola soy un arbol y mi tamaño es mas grande que un arbusto";

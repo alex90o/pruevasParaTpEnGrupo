@@ -1,22 +1,11 @@
 package practica;
 
 public interface ObjetoInerte {
-
+String INERTE= "INERTE";
+String INERTEARTIFICIAL = "Es inerte y artificial";
+String INERTENATURAL = "Es inerte y natural";
+boolean esInerte();
+boolean esNatural();
+boolean esArtificial();
+String informar();
 }
-/*hola estefiii
-
-holaaaa se puede leer??
-
-si 
-
-bienn
-hagamos el interface entonces ajajja
-dale 
-
-ale vos tenes de casualidad los archivos que hiciste de alumno, profesor, etc? para verlos 
-las clases?
-sii -- dale gracias!!
-hay la paso por aca
-no lo muestra?
-emm nop
-*/
