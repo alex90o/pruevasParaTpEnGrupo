@@ -62,7 +62,7 @@ public Persona(int dni, String nombre,String apellido, int edad) {
 
 @Override
 public String toString() {
-	return "Persona [dni=" + dni + ", nombre=" + nombre + ", edad=" + edad + ", direccion=" + direccion + ", apellido="
+	return "Persona [DNI =" + dni + ", nombre =" + nombre + ", edad =" + edad + ", direccion =" + direccion + ", apellido ="
 			+ apellido + "]";
 }
 //metodos de la interface
@@ -76,14 +76,14 @@ public boolean activarActor() {
 	}
 @Override
 public boolean desactivarActor() {
-       return Persona.INACTIVO;
+    return Persona.INACTIVO;
 }
 //otreso metodos de persona
-public String salular() {
+public String saludar() {
 	return "Holiiis ! :) ;)";
 }
 public String aprender() {
-	return "Aca Aprendiendo Programación !!!!";
+	return "Aca Aprendiendo ProgramaciÃ³n !!!!";
 	
 }
 }

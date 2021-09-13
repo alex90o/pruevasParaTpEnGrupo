@@ -3,20 +3,20 @@ package practica;
 public class Estudiantes extends Persona {
 private int legajo;
 private String carrera;
-private int materiasAprovadas;
+private int materiasAprobadas;
 private int materiaTotales;
 
-//Constructores -- falta ver si le agregamos mas metodos o atrubutos
+//Constructores -- falta ver si le agregamos mas metodos o atributos
 public Estudiantes() {
 	
 }
 
 public Estudiantes(int dni, String nombre, String apellido, int edad, String direccion, int legajo, String carrera,
-		int materiasAprovadas, int materiaTotales) {
+		int materiasAprobadas, int materiaTotales) {
 	super(dni, nombre, apellido, edad, direccion);
 	this.legajo = legajo;
 	this.carrera = carrera;
-	this.materiasAprovadas = materiasAprovadas;
+	this.materiasAprobadas = materiasAprobadas;
 	this.materiaTotales = materiaTotales;
 }
 
@@ -37,12 +37,12 @@ public void setCarrera(String carrera) {
 	this.carrera = carrera;
 }
 
-public int getMateriasAprovadas() {
-	return materiasAprovadas;
+public int getMateriasAprobadas() {
+	return materiasAprobadas;
 }
 
-public void setMateriasAprovadas(int materiasAprovadas) {
-	this.materiasAprovadas = materiasAprovadas;
+public void setMateriasAprobadas(int materiasAprobadas) {
+	this.materiasAprobadas = materiasAprobadas;
 }
 
 public int getMateriaTotales() {
@@ -53,10 +53,10 @@ public void setMateriaTotales(int materiaTotales) {
 	this.materiaTotales = materiaTotales;
 }
 
-//metodos de estdiante
+//metodos de estudiante
 public void aprobarMateria() {
-	if((this.materiaTotales-this.materiasAprovadas)>0) {
-		this.materiasAprovadas++;
+	if((this.materiaTotales-this.materiasAprobadas)>0) {
+		this.materiasAprobadas++;
 	}
 	//else { 
 	//	System.out.println("No puede aprobar mas materias ya aprobo todas las maaterias");
@@ -65,7 +65,7 @@ public void aprobarMateria() {
 }
 
 public double CalcularPorcentaje() {
-	return ((this.materiasAprovadas*this.materiaTotales)/100);
+	return ((this.materiasAprobadas*this.materiaTotales)/100);
 }
 
 public String informarPorcentaje() {
@@ -75,10 +75,9 @@ public String informarPorcentaje() {
 //toString()
 @Override
 public String toString() {
-	return "Estudiantes [legajo=" + legajo + ", carrera=" + carrera + ", materiasAprovadas=" + materiasAprovadas
+	return "Estudiantes [legajo=" + legajo + ", carrera=" + carrera + ", materiasAprobadas=" + materiasAprobadas
 			+ ", materiaTotales=" + materiaTotales + "]";
 }
-
 
 
 }

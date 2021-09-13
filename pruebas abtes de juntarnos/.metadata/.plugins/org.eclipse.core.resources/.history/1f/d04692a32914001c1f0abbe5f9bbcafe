@@ -13,7 +13,7 @@ public class AppPrincipal {
 				System.out.println("Actor Estudiante INactivo");
 			}
 		System.out.println(perE.informarQueEs());
-		System.out.println(perE.saludar());
+		System.out.println(perE.salular());
 		System.out.println(perE.aprender());
 		System.out.println(perE.toString());
 		
@@ -28,20 +28,20 @@ public class AppPrincipal {
 				System.out.println("Actor Estudiante INactivo");
 			}
 		System.out.println(estudy1.informarQueEs());
-		System.out.println(estudy1.saludar());
+		System.out.println(estudy1.salular());
 		System.out.println(estudy1.aprender());
 		System.out.println(estudy1.toString());
 		
 		//estudy1.CalcularPorcentaje();
 		System.out.println(estudy1.informarPorcentaje());
 		estudy1.aprobarMateria();
-		System.out.println(estudy1.getMateriasAprobadas());
+		System.out.println(estudy1.getMateriasAprovadas());
 		System.out.println(estudy1.informarPorcentaje());
 		//System.out.println("Porcentaje con la funcion calculaPorcentaje es : " + estudy1.CalcularPorcentaje());
 		estudy1.aprobarMateria();
 		estudy1.aprobarMateria();
 		estudy1.aprobarMateria();
-		System.out.println(estudy1.getMateriasAprobadas());
+		System.out.println(estudy1.getMateriasAprovadas());
 		System.out.println(estudy1.informarPorcentaje());
 		
 		System.out.println(estudy1.toString());
@@ -57,7 +57,7 @@ public class AppPrincipal {
 		profe1.setEdad(45);
 		profe1.setDireccion("Las Tacureas 267");
 		profe1.setSueldoBasico(20000);
-		profe1.setAntiguedad(10);
+		profe1.setAntiguadad(10);
 		ArrayList<String> listadoMaterias = new ArrayList<>();
 		profe1.setListaDeMaterias(listadoMaterias);
 		System.out.println("Las Cantidad de materias agregadas es "+profe1.informarCantMaterias());

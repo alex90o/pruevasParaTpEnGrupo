@@ -5,18 +5,18 @@ import java.util.ArrayList;
 public class Profesor extends Persona {
 private double sueldo= 0;
 private double sueldoBasico;
-private int antiguadad;
+private int antiguedad;
 private String titulo;
 private ArrayList<String>listaDeMaterias;
 
 //constructores
 
 public Profesor(int dni, String nombre, String apellido, int edad, String direccion, double sueldoBasico,
-		int antiguadad, String titulo, ArrayList<String> listaDeMaterias) {
+		int antiguedad, String titulo, ArrayList<String> listaDeMaterias) {
 	super(dni, nombre, apellido, edad, direccion);
 	
 	this.sueldoBasico = sueldoBasico;
-	this.antiguadad = antiguadad;
+	this.antiguedad = antiguedad;
 	this.titulo = titulo;
 	this.listaDeMaterias = listaDeMaterias;
 }
@@ -41,12 +41,12 @@ public void setSueldoBasico(double sueldoBasico) {
 	this.sueldoBasico = sueldoBasico;
 }
 
-public int getAntiguadad() {
-	return antiguadad;
+public int getAntiguedad() {
+	return antiguedad;
 }
 
-public void setAntiguadad(int antiguadad) {
-	this.antiguadad = antiguadad;
+public void setAntiguedad(int antiguedad) {
+	this.antiguedad = antiguedad;
 }
 
 public String getTitulo() {
@@ -67,7 +67,7 @@ public void setListaDeMaterias(ArrayList<String> listaDeMaterias) {
 //metodos que creamos nosotros 
 public double calcularSueldo()
 {   
-	switch (this.antiguadad) {
+	switch (this.antiguedad) {
 		case 1:
 			this.sueldo = this.sueldoBasico;
 			break;
@@ -81,7 +81,7 @@ public double calcularSueldo()
 			 this.sueldo = (this.sueldoBasico*1.25);	 	 	 		
 	
 		default:
-			if(this.antiguadad>5)
+			if(this.antiguedad>5)
 			this.sueldo = (this.sueldoBasico*1.35);
 			break;
 	}
@@ -107,7 +107,7 @@ public String enseniar() {
 @Override
 public String toString() {
 	
-	return "Profesor [sueldo=" + sueldo + ", sueldoBasico=" + sueldoBasico + ", antiguadad=" + antiguadad + ", titulo="
+	return "Profesor [sueldo=" + sueldo + ", sueldoBasico=" + sueldoBasico + ", antiguedad=" + antiguedad + ", titulo="
 			+ titulo+" " + super.toString() +"]";
 }
 
