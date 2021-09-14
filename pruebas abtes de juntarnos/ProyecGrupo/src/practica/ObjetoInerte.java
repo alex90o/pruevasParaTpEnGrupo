@@ -9,3 +9,14 @@ boolean esNatural();
 boolean esArtificial();
 String informar();
 }
+/*
+tengo dudas su agregamos un metodo 
+mas
+
+un 
+String informarInerte(); // camiaria al informar
+
+y un 
+String informarTipoInertee(); // en el caso de vehiculo informaria INERTEARTIFICIAL
+
+*/

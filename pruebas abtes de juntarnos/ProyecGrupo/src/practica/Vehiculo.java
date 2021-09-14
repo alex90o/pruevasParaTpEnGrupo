@@ -2,7 +2,7 @@ package practica;
 
 import java.util.function.DoubleUnaryOperator;
 
-public class Vehiculo implements ObjetoInerte {
+public class Vehiculo implements ObjetoInerte, Actor {
     protected String duenio;
     protected int cantRuedas;
     protected String color;
@@ -134,7 +134,7 @@ public class Vehiculo implements ObjetoInerte {
     //ahora saco los atributos, los pongo para guiarme
    //DALE  a lo de la interface todavia por las dudas no hay que ahcerlo todavia no la creamos o ya la hicite a 
    // objeto inerte?
-    //metodos de la interface-- faltaa hacer objeto inerte
+    //metodos de la interface-- objeto inerte -- REVISAR
     @Override
     public boolean esInerte() {
 	    return true;
@@ -147,12 +147,26 @@ public class Vehiculo implements ObjetoInerte {
 
     @Override
     public boolean esArtificial() {
-        return Vehiculo.INERTE;
+        return true;
     }
 
     @Override
     public String informar() {
         return INERTE;
+    }
+
+     //metodos de la interface ACTOR
+    @Override
+    public String informarQueEs() {
+	    return MAQUINA;
+    }
+    @Override
+    public boolean activarActor() {
+	    return Vehiculo.ACTIVO;
+	}
+    @Override
+    public boolean desactivarActor() {
+        return Vehiculo.INACTIVO;
     }
 
     //METODOS CREADOS POR NOSOTROS 

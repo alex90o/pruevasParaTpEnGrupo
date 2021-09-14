@@ -2,9 +2,9 @@ package practica;
 //esta class es una que hicimos en clases le falta agregar nuestro metodos y atributos
 public class Bicicleta {
 //atributos
-public float velocidadActual;
-public int platoActual;
-public int pinionActual;
+private float velocidadActual;
+private int platoActual;
+private int pinionActual;
 
 public Bicicleta(float velo, int pla, int pin) {
     velocidadActual = velo;
